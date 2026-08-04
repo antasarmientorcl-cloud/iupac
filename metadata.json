@@ -1,0 +1,6 @@
+{
+  "name": "Nomenclature Notebook",
+  "description": "An interactive IUPAC Organic Chemistry naming lab, molecule builder, 2D skeletal diagram renderer, step-by-step reasoning engine, reference notebook, and quiz practice suite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

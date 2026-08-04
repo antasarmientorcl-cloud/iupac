@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paper: #0f1115;
+    --card: #16191f;
+    --card-side: #121418;
+    --ink: #f1f5f9;
+    --ink-soft: #94a3b8;
+    --rule: rgba(255, 255, 255, 0.1);
+    --blue-accent: #2563eb;
+    --amber: #f59e0b;
+    --brick: #f43f5e;
+  }
+
+  body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Sophisticated dark grid paper texture utility */
+  .bg-grid-paper {
+    background-color: #0f1115;
+    background-image:
+      repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.03) 0px, rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent 28px),
+      repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.03) 0px, rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent 28px);
+  }
+
+  .font-serif-display {
+    font-family: 'Fraunces', serif;
+  }
+
+  .font-mono-code {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom dark scrollbars for lab aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
